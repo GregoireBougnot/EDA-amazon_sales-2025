@@ -39,16 +39,16 @@ df.isna().mean() * 100  # percentage
 df.nunique()
 
 #7. Categorical Column Analysis
-df['column'].value_counts()
-df['column'].value_counts(normalize=True) * 100
+df['Quantity'].value_counts()
+df['Quantity'].value_counts(normalize=True) * 100
 
 #8. Numerical Column Analysis
 
 Distribution:
 
 import matplotlib.pyplot as plt
-plt.hist(df["colonne"])
-plt.title("Distribution of colonne")
+plt.hist(df["Total Sales"])
+plt.title("Total Sales")
 plt.show()
 
 Outliers Detection:
