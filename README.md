@@ -10,6 +10,8 @@ This repository contains an Exploratory Data Analysis (EDA) of Amazon Sales Data
 - No column is heavily missing, although some object columns may need conversion (dates, prices).
 --
 EDA Steps
+
+
 #1. Load the Dataset
 import pandas as pd
 df = pd.read_csv("amazon_sales_data 2025.csv")
@@ -52,7 +54,7 @@ plt.title("Total Sales")
 plt.show()
 
 Outliers Detection:
-df["colonne"].quantile([0.01, 0.25, 0.5, 0.75, 0.99])
+df["Quantity"].quantile([0.01, 0.25, 0.5, 0.75, 0.99])
 
 #9. Correlation Analysis
 corr = df.corr(numeric_only=True)
